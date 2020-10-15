@@ -156,7 +156,12 @@ header {
 
 .sec.first {
   background-color: #F5F8FA;
-  height: 900px;
+}
+
+.sec.first::after {
+  display: table;
+  clear: both;
+  content: "";
 }
 
 .container-uno {
@@ -175,6 +180,7 @@ header {
   width: 80%;
   margin: 20px auto;
   padding: 20px;
+  box-shadow: 0px 0px 5px 0px lightgray;
 
 }
 
@@ -186,11 +192,11 @@ header {
 }
 
 .sinistra * {
-  padding: 15px;
+  margin: 20px;
 }
 
 .sinistra > img {
-  width: 60%;
+  width: 65%;
 }
 
 .destra * {
@@ -244,7 +250,8 @@ header {
 .side {
   background-color: white;
   height: 450px;
-  width: calc(100% / 3 - 4%)
+  width: calc(100% / 3 - 4%);
+  box-shadow: 0px 0px 5px 0px lightgray;
 }
 
 .side.left {
