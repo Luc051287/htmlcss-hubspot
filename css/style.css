@@ -123,9 +123,9 @@ header {
  border-bottom: none;
 }
 
-
 .part.jumbotron {
   position: relative;
+  font-size: 0;
 }
 
 .jumbotron > img {
@@ -143,10 +143,11 @@ header {
 #text-main * {
   margin-bottom: 20px;
   margin-left: 0;
+  font-size: 16px;
 }
 
 #text-main > h1 {
-  font-size: 2.6em;
+  font-size: 42px;
 }
 
 .sec {
@@ -154,23 +155,58 @@ header {
 }
 
 .sec.first {
-  background-color: yellow;
+  background-color: #F5F8FA;
   height: 900px;
 }
 
 .container-uno {
-  background-color: blue;
   width: 80%;
   margin: auto;
-  height: 100px;
   text-align: center;
 }
 
+#cube {
+  width: 20%;
+  margin-top: 10px;
+}
+
 .container-due {
-  background-color: blue;
+  background-color: white;
   width: 80%;
-  margin: 30px auto;
-  height: 100px;
+  margin: auto;
+  padding: 30px;
+}
+
+.container-due > .sinistra {
+  text-align: center;
+  display: inline-block;
+  width: 20%;
+}
+
+.sinistra > img {
+  width: 60%;
+}
+
+.container-due > .destra {
+  display: inline-block;
+  width: 70%;
+}
+
+.destra > h3 {
+  display: inline-block;
+}
+
+.destra > p {
+  width: 90%;
+}
+
+.destra > hr {
+  display: inline-block;
+  height: 2px;
+  background-color: black;
+  border: none;
+  width: 55%;
+  margin: 5px 40px;
 }
 
 .container-tre {
