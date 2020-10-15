@@ -14,30 +14,45 @@ header {
 }
 
 .part.top {
-  background-color: lightgray;
+  background-color: rgb(215, 215, 215);
   height: 80px;
   position: fixed;
   top: 0;
   z-index: 2;
+}
 
+.menu.left > a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+  border-right: 1px solid black;
+}
+
+.menu.left > a:last-child {
+  border-right: none;
+}
+
+.menu.left a > i {
+  margin-left: 5px;
 }
 
 .container {
   width: 80%;
-  margin: 10px auto;
+  margin: auto;
+  height: 80px;
 }
 
-.part.top::after {
+.container::after {
   clear: both;
   content: "";
   display: table;
 }
 
 .menu {
-  width: 200px;
-  height: 50px;
-  background-color: blue;
+  height: 80px;
+  /* background-color: blue; */
   margin: auto;
+  line-height: 80px;
 }
 
 .menu.left {
@@ -48,11 +63,66 @@ header {
   float: right;
 }
 
+#login, #getfree {
+  margin-left: 10px;
+  font-size: 0.9em;
+  border: 1px solid black;
+  color: white;
+  font-weight: bold;
+  padding: 12px 0;
+  border-radius: 5px;
+  background-color: #454a5c;
+  cursor: pointer;
+}
+
 .part.bottom {
-  background-color: red;
+  background-color: white;
   height: 80px;
   margin-top: 80px;
 }
+
+#logo {
+  vertical-align: middle;
+}
+
+#bar-list {
+  list-style: none;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+}
+
+#bar-list > li {
+ display: inline-block;
+ height: 100%;
+
+}
+
+.menu.right i {
+  margin-left: 10px;
+}
+
+#bar-list a {
+ text-decoration: none;
+ color: black;
+ font-size: 15px;
+ display: block;
+ width: 100%;
+ margin: 0 10px;
+}
+
+
+#bar-list > li:hover {
+ border-bottom: 3px solid black;
+ cursor: pointer;
+}
+
+#bar-list > li:hover:nth-child(2) {
+ text-decoration: underline;
+ cursor: pointer;
+ border-bottom: none;
+}
+
 
 .part.jumbotron {
   font-size: 0;
@@ -136,10 +206,21 @@ header {
   height: 700px;
 }
 
+.contenitore {
+  margin: auto;
+  width: 80%;
+  height: 80px;
+  text-align: center;
+  background-color: blue;
+}
+
+
 .sec.third {
   background-color: purple;
   height: 1000px;
 }
+
+
 
 footer {
   height: 500px;
