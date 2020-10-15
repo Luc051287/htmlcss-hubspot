@@ -208,7 +208,7 @@ header {
   width: 70%;
 }
 
-.destra > h3 {
+.destra > h4 {
   display: inline-block;
 }
 
@@ -248,10 +248,17 @@ header {
 }
 
 .side {
+  text-align: center;
   background-color: white;
+  /*da togliere*/
   height: 450px;
   width: calc(100% / 3 - 4%);
   box-shadow: 0px 0px 5px 0px lightgray;
+  padding: 25px;
+}
+
+.side * {
+  margin-bottom: 20px;
 }
 
 .side.left {
@@ -259,12 +266,26 @@ header {
   margin-right: 6%;
 }
 
+.side.left > img {
+  width: 35%;
+}
+
+#vlist > li {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+}
+
+#vlist i {
+  color: #FA7A59;
+  margin-right: 10px;
+}
+
 
 .side.center {
   float: left;
   margin-right: 6%;
 }
-
 
 .side.right {
   float: left;
