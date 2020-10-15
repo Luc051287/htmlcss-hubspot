@@ -6,6 +6,7 @@
 
 header {
   width: 100vw;
+  position: relative;
 }
 
 .part {
@@ -15,20 +16,62 @@ header {
 .part.top {
   background-color: lightgray;
   height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+
+}
+
+.container {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.part.top::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.menu {
+  width: 200px;
+  height: 50px;
+  background-color: blue;
+  margin: auto;
+}
+
+.menu.left {
+  float: left;
+}
+
+.menu.right {
+  float: right;
 }
 
 .part.bottom {
   background-color: red;
   height: 80px;
+  margin-top: 80px;
 }
 
 .part.jumbotron {
   font-size: 0;
+  position: relative;
 }
 
 .jumbotron > img {
   width:100%;
 }
+
+#text-main {
+  margin: auto;
+  width: 80%;
+  background-color: blue;
+  height: 400px;
+  position: absolute;
+  top: 0;
+}
+
 
 .sec {
 
@@ -37,6 +80,55 @@ header {
 .sec.first {
   background-color: yellow;
   height: 900px;
+}
+
+.container-uno {
+  background-color: blue;
+  width: 80%;
+  margin: auto;
+  height: 100px;
+  text-align: center;
+}
+
+.container-due {
+  background-color: blue;
+  width: 80%;
+  margin: 30px auto;
+  height: 100px;
+}
+
+.container-tre {
+  width: 80%;
+  margin: 30px auto;
+  /* height: 100px; */
+}
+
+.container-tre::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.side {
+  background-color: white;
+  height: 450px;
+  width: calc(100% / 3 - 4%)
+}
+
+.side.left {
+  float: left;
+  margin-right: 6%;
+}
+
+
+.side.center {
+  float: left;
+  margin-right: 6%;
+}
+
+
+.side.right {
+  float: left;
 }
 
 .sec.second {
