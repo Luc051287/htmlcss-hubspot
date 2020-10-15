@@ -23,7 +23,7 @@ header {
 }
 
 .part.jumbotron {
-  height: 623px;
+  font-size: 0;
 }
 
 .jumbotron > img {
