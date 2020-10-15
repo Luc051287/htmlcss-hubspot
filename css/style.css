@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100vw;
+}
+
+.part {
+  width: 100%;
+}
+
+.part.top {
+  background-color: lightgray;
+  height: 80px;
+}
+
+.part.bottom {
+  background-color: red;
+  height: 80px;
+}
+
+.part.jumbotron {
+  height: 623px;
+}
+
+.jumbotron > img {
+  width:100%;
+}
+
+.sec {
+
+}
+
+.sec.first {
+  background-color: yellow;
+  height: 900px;
+}
+
+.sec.second {
+  background-color: pink;
+  height: 700px;
+}
+
+.sec.third {
+  background-color: purple;
+  height: 1000px;
+}
+
+footer {
+  height: 500px;
+  background-color: green;
+}
