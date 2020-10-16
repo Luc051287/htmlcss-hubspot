@@ -65,7 +65,6 @@ a {
 
 .menu {
   height: 80px;
-  /* background-color: blue; */
   margin: auto;
   line-height: 80px;
 }
@@ -279,8 +278,8 @@ a {
   height: 2px;
   background-color: #33485B;
   border: none;
-  width: 50%;
-  margin: 5px 40px;
+  width: 30vw;
+  margin: 5px 30px;
 }
 
 #hlist > li {
@@ -384,7 +383,8 @@ a {
 .box {
   width: calc(100% / 4 );
   float: left;
-  border: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
   padding: 20px 0;
 }
 
@@ -433,7 +433,7 @@ a {
 
 .sec.third {
   background-color: white;
-  position: relative;
+  /* position: relative; */
 }
 
 #section-third-top {
@@ -445,7 +445,6 @@ a {
 
 #section-third-top-left, #section-third-top-right {
   position: absolute;
-  /* display: inline-block; */
   margin-top: 30px;
   height: 100%;
 }
@@ -461,6 +460,11 @@ a {
 #section-third-top-left > h3 {
   font-size: 2.5em;
   margin-bottom: 15px;
+}
+
+#section-third-top-left > p {
+  font-size: 0.8em;
+  line-height: 30px;
 }
 
 #section-third-top-right {
@@ -502,13 +506,26 @@ a {
 
 #section-third-bottom-left, #section-third-bottom-right {
   position: absolute;
-  /* display: inline-block; */
-  margin-top: 30px;
+  margin-top: 50px;
   height: 100%;
 }
 
-#text-section {
+#section-third-bottom-right {
+  text-align: right;
+}
 
+#text-section > h3 {
+  font-size: 1.7em;
+}
+
+#text-section > p {
+  font-size: 0.8em;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+#text-section > p:last-child {
+  font-size: 0.7em;
 }
 
 #text-section * {
