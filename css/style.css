@@ -2,11 +2,17 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #33485B;
 }
 
 header {
-  width: 100vw;
+  width: 100%;
   position: relative;
+}
+
+a {
+  font-size: 0.8em;
 }
 
 .part {
@@ -14,23 +20,31 @@ header {
 }
 
 .part.top {
-  background-color: rgb(215, 215, 215);
+  background-color: #F4F9FD;
   height: 80px;
   position: fixed;
   top: 0;
   z-index: 2;
+  border-bottom: 1px solid #425B76;
 }
 
 .menu.left > a {
   text-decoration: none;
-  color: black;
   padding: 0 10px;
   border-right: 1px solid black;
 }
 
-/*metterlo poi con not() sopra*/
 .menu.left > a:last-child {
   border-right: none;
+}
+
+.menu.left > a:hover {
+  text-decoration: underline;
+  color: #197A8C;
+}
+
+.menu.left > a:hover i {
+  color: #197A8C;
 }
 
 .menu.left a > i {
@@ -64,16 +78,31 @@ header {
   float: right;
 }
 
+.menu.right > i {
+  color: #74CEDC;
+}
+
 #login, #getfree {
   margin-left: 10px;
-  font-size: 0.9em;
-  border: 1px solid black;
+  font-size: 0.7em;
+  border: 1px solid #FA7A59;
   color: white;
-  font-weight: bold;
-  padding: 12px 0;
+  padding: 10px 10px;
   border-radius: 5px;
-  background-color: #454a5c;
   cursor: pointer;
+}
+
+#login {
+  background-color: white;
+  color: #FA7A59;
+}
+
+#getfree {
+  background-color: #FA7A59;
+}
+
+#login:hover, #getfree:hover {
+  background-color: #FCBCAC;
 }
 
 .part.bottom {
@@ -105,16 +134,13 @@ header {
 
 #bar-list a {
  text-decoration: none;
- color: black;
- font-size: 15px;
- display: block;
- width: 100%;
+ font-size: 0.8em;
  margin: 0 10px;
 }
 
 
 #bar-list > li:hover {
- border-bottom: 3px solid black;
+ border-bottom: 3px solid #425B76;
  cursor: pointer;
 }
 
@@ -133,22 +159,41 @@ header {
   width:100%;
 }
 
-#text-main {
+#text-jumbotron {
   width: 40%;
   position: absolute;
   top: 0;
   left: 10%;
   margin-top: 50px;
+  height: calc(100% - 50px);
 }
 
-#text-main * {
-  margin-bottom: 20px;
+#text-jumbotron * {
+  margin-bottom: 2vw;
   margin-left: 0;
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 
-#text-main > h1 {
+#text-jumbotron > h1 {
   font-size: 42px;
+}
+
+#text-jumbotron > p {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 30px;
+  width: 97 %;
+}
+
+#text-jumbotron > #getfree {
+  font-weight: 300;
+  font-size: 12px;
+  padding: 15px 25px;
+}
+
+#text-jumbotron > p:last-child {
+  font-size: 10px;
+  width: 60%;
 }
 
 .sec {
