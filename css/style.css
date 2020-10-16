@@ -350,14 +350,8 @@ a {
   float: left;
 }
 
-
-
-
-
 .sec.second {
   background: linear-gradient(to right, #29AEB4 , #2FBCA7);
-  /*da togliere*/
-  /* height: 700px; */
 }
 
 .contenitore {
@@ -370,14 +364,15 @@ a {
 .contenitore.up p:first-child {
   padding: 30px;
   font-size: 2em;
+  font-weight: bold;
+  color: white;
 }
 
 .contenitore.up p:last-child {
   font-size: 0.95em;
-}
-
-.contenitore.down {
-  margin-top: 30px;
+  color: white;
+  line-height: 30px;
+  font-weight: 200;
 }
 
 .contenitore.down::after {
@@ -388,11 +383,13 @@ a {
 
 .box {
   width: calc(100% / 4 );
-  /* height: 100%; */
-  /* background-color: blue; */
   float: left;
   border: 1px solid white;
   padding: 20px 0;
+}
+
+.box > h3, .box > p {
+  color: white;
 }
 
 .box.alto {
@@ -417,12 +414,21 @@ a {
 }
 
 .box h3 {
-  margin: 10px 0;
-  font-size: 3em;
+  margin: 20px 0;
+  font-size: 2.5em;
+  letter-spacing: 1px;
 }
 
 .box p {
-  margin: 10px 0;
+  font-size: 0.7em;
+}
+
+.plus {
+  color: white;
+  font-size: 0.5em;
+  font-weight: 200;
+  vertical-align: middle;
+  margin-left: 4px;
 }
 
 .sec.third {
