@@ -363,18 +363,105 @@ header {
   margin: 10px 0;
 }
 
-
-
-
-
-
-
-
-
 .sec.third {
   background-color: white;
-  height: 1000px;
+  position: relative;
 }
+
+#section-third-top {
+  margin: auto;
+  width: 80%;
+  height: 200px;
+  position: relative;
+}
+
+#section-third-top-left, #section-third-top-right {
+  position: absolute;
+  /* display: inline-block; */
+  margin-top: 30px;
+  height: 100%;
+}
+
+#section-third-top-left {
+  top: 0;
+  left: 0;
+  width: 15%;
+  margin-right: 20%;
+  margin-left: 8%;
+}
+
+#section-third-top-left > h3 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+#section-third-top-right {
+  width: 55%;
+  top: 0;
+  right: 0;
+}
+
+.wrap-logo > img {
+  width: 100%;
+}
+
+.wrap-logo {
+  display: inline-block;
+  margin: 10px;
+  width: 20%;
+  vertical-align: middle;
+}
+
+#section-third-bottom {
+  margin: auto;
+  width: 80%;
+  height: 400px;
+  position: relative;
+}
+
+#section-third-bottom-left {
+  top: 0;
+  left: 0;
+  width: 40%;
+}
+
+#section-third-bottom-right {
+  top: 0;
+  right: 0;
+  text-align: center;
+  width: 50%;
+}
+
+#section-third-bottom-left, #section-third-bottom-right {
+  position: absolute;
+  /* display: inline-block; */
+  margin-top: 30px;
+  height: 100%;
+}
+
+#text-section {
+
+}
+
+#text-section * {
+  margin-bottom: 20px;
+}
+
+ #section-third-bottom-right > img {
+   width: 50%;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
   height: 500px;
