@@ -169,9 +169,8 @@ a {
 }
 
 #text-jumbotron * {
-  margin-bottom: 2vw;
+  margin-bottom: 1.5vw;
   margin-left: 0;
-  /* font-size: 16px; */
 }
 
 #text-jumbotron > h1 {
@@ -182,7 +181,7 @@ a {
   font-size: 13px;
   font-weight: 300;
   line-height: 30px;
-  width: 97 %;
+  width: 97%;
 }
 
 #text-jumbotron > #getfree {
@@ -196,10 +195,6 @@ a {
   width: 60%;
 }
 
-.sec {
-
-}
-
 .sec.first {
   background-color: #F5F8FA;
 }
@@ -210,7 +205,7 @@ a {
   content: "";
 }
 
-.container-uno {
+#container-uno {
   width: 80%;
   margin: auto;
   text-align: center;
@@ -218,10 +213,21 @@ a {
 
 #cube {
   width: 20%;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
-.container-due {
+#conteiner-uno > h2 {
+  font-size: 1.9em;
+}
+
+#container-uno > p {
+  font-size: 1em;
+  margin-top: 30px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+#container-due {
   background-color: white;
   width: 80%;
   margin: 20px auto;
@@ -230,50 +236,57 @@ a {
 
 }
 
-.container-due > .sinistra {
+#sinistra {
   text-align: center;
   display: inline-block;
   width: 20%;
-  padding: 10px;
 }
 
-.sinistra * {
+#sinistra * {
   margin: 20px;
 }
 
-.sinistra > img {
+#sinistra > #getfree, .side > #getfree {
+  padding: 15px 25px;
+}
+
+#sinistra > img {
   width: 65%;
 }
 
-.destra * {
+#destra * {
   margin-bottom: 20px;
 }
 
-.container-due > .destra {
+#destra {
   display: inline-block;
   width: 70%;
+  margin-left: 50px;
 }
 
-.destra > h4 {
+#destra > h4 {
   display: inline-block;
 }
 
-.destra > p {
+#destra > p {
   width: 80%;
+  line-height: 25px;
+  font-size: 0.8em;
 }
 
-.destra > hr {
+#destra > hr {
   display: inline-block;
   height: 2px;
-  background-color: black;
+  background-color: #33485B;
   border: none;
-  width: 60%;
+  width: 50%;
   margin: 5px 40px;
 }
 
 #hlist > li {
   display: inline-block;
   margin-right: 20px;
+  font-size: 0.8em;
 }
 
 #hlist i {
@@ -281,12 +294,12 @@ a {
   margin-right: 10px;
 }
 
-.container-tre {
+#container-tre {
   width: 80%;
   margin: 30px auto;
 }
 
-.container-tre::after {
+#container-tre::after {
   display: table;
   clear: both;
   content: "";
@@ -304,13 +317,22 @@ a {
   margin-bottom: 20px;
 }
 
-.side.left {
+.side.left, .side.center {
   float: left;
   margin-right: 6%;
 }
 
 .side img {
   height: 88px;
+}
+
+.side > p {
+  line-height: 25px;
+  font-size: 0.8em;
+}
+
+.side > hr {
+  margin-top: 50px;
 }
 
 #vlist > li {
@@ -322,11 +344,6 @@ a {
 #vlist i {
   color: #FA7A59;
   margin-right: 10px;
-}
-
-.side.center {
-  float: left;
-  margin-right: 6%;
 }
 
 .side.right {
