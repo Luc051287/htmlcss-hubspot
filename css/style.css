@@ -245,7 +245,7 @@ a {
   margin: 20px;
 }
 
-#sinistra > #getfree, .side > #getfree {
+#sinistra > #getfree, .side > #getfree, #text-section > #getfree {
   padding: 15px 25px;
 }
 
