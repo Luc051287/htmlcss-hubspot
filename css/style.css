@@ -633,6 +633,7 @@ footer {
   width: 80%;
   margin: auto;
   margin-top: 20px;
+  position: relative;
 }
 
 #footer-bottom p {
@@ -640,4 +641,28 @@ footer {
   font-size: 0.6em;
   font-weight: lighter;
   margin-top: 5px;
+}
+
+.foot {
+  position: absolute;
+  top: 0;
+}
+
+.foot.bottom-left {
+  left: 0;
+}
+
+.foot.bottom-right {
+  right: 0;
+  text-align: right;
+}
+
+.foot.bottom-right > a {
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.foot.bottom-right > a:hover {
+  text-decoration: underline;
 }
