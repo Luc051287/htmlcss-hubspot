@@ -671,8 +671,7 @@ footer {
   height: 250px;
   position: fixed;
   right: 0;
-  /*tolgo al viewport l'altezza del contenitore*/
-  top: calc(100vh - 250px);
+  bottom: 0;
   background-color: blue;
 }
 
@@ -688,7 +687,7 @@ footer {
   cursor: pointer;
   position: absolute;
   right: 15px;
-  top: calc(250px - 75px)
+  bottom: 15px;
 }
 
 #button-chat > i {
@@ -700,7 +699,7 @@ footer {
   width: 240px;
   background-color: white;
   position: absolute;
-  top: calc(250px - 215px);
+  top: 35px;
   right: 15px;
   border-radius: 5px;
 }
