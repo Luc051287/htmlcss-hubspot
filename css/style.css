@@ -175,6 +175,7 @@ a {
   width: 40%;
   position: absolute;
   top: 0;
+  left: 0;
   left: 10%;
   margin-top: 50px;
   height: calc(100% - 50px);
@@ -211,7 +212,7 @@ a {
   background-color: #F5F8FA;
 }
 
-#container-uno {
+#container-one {
   width: 80%;
   margin: auto;
   text-align: center;
@@ -222,18 +223,18 @@ a {
   margin-top: 50px;
 }
 
-#conteiner-uno > h2 {
+#conteiner-one > h2 {
   font-size: 1.9em;
 }
 
-#container-uno > p {
+#container-one > p {
   font-size: 1em;
   margin-top: 30px;
   line-height: 30px;
   margin-bottom: 30px;
 }
 
-#container-due {
+#container-two {
   background-color: white;
   width: 80%;
   margin: 20px auto;
@@ -242,45 +243,45 @@ a {
 
 }
 
-#sinistra {
+#container-two-left {
   text-align: center;
   display: inline-block;
   width: 20%;
 }
 
-#sinistra * {
+#container-two-left * {
   margin: 20px;
 }
 
-#sinistra > .getfree, .side > .getfree, #text-section > .getfree {
+#container-two-left > .getfree, .side > .getfree, #text-section > .getfree {
   padding: 15px 25px;
 }
 
-#sinistra > img {
+#container-two-left > img {
   width: 65%;
 }
 
-#destra * {
+#container-two-right * {
   margin-bottom: 20px;
 }
 
-#destra {
+#container-two-right {
   display: inline-block;
   width: 70%;
   margin-left: 50px;
 }
 
-#destra > h4 {
+#container-two-right > h4 {
   display: inline-block;
 }
 
-#destra > p {
+#container-two-right > p {
   width: 80%;
   line-height: 25px;
   font-size: 0.8em;
 }
 
-#destra > hr {
+#container-two-right > hr {
   display: inline-block;
   height: 2px;
   background-color: #33485B;
@@ -300,7 +301,7 @@ a {
   margin-right: 10px;
 }
 
-#container-tre {
+#container-three {
   width: 80%;
   margin: 30px auto;
 }
@@ -335,14 +336,14 @@ a {
   margin-top: 50px;
 }
 
-#vlist > li {
+.vlist > li {
   list-style-type: none;
   text-align: left;
   margin: 0;
   font-size: 0.8em;
 }
 
-#vlist i {
+.vlist i {
   color: #FA7A59;
   margin-right: 10px;
 }
@@ -355,21 +356,21 @@ a {
   background: linear-gradient(to right, #29AEB4 , #2FBCA7);
 }
 
-.contenitore {
+.section-container {
   margin: auto;
   width: 80%;
   text-align: center;
   color: white
 }
 
-.contenitore.up p:first-child {
+.section-container.up p:first-child {
   padding: 30px;
   font-size: 2em;
   font-weight: bold;
   color: white;
 }
 
-.contenitore.up p:last-child {
+.section-container.up p:last-child {
   font-size: 0.95em;
   color: white;
   line-height: 30px;
@@ -388,12 +389,12 @@ a {
   color: white;
 }
 
-.box.alto {
+.box.up-part {
   border-top: none;
   margin-top: 100px;
 }
 
-.box.basso {
+.box.down-part {
   border-bottom: none;
   margin-bottom: 100px;
 }
@@ -405,7 +406,7 @@ a {
   border-right: none;
 }
 
-.contenitore.down img {
+.section-container.down img {
   height: 33px;
 }
 
