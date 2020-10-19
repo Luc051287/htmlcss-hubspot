@@ -19,6 +19,8 @@ header {
 
 a, p {
   font-size: 0.8em;
+  /*non sicuro se creare altro*/
+  text-decoration: none;
 }
 
 /* HEADER TOP */
@@ -52,7 +54,6 @@ a, p {
 }
 
 .menu.left > a {
-  text-decoration: none;
   padding-right: 10px;
   border-right: 1px solid black;
 }
@@ -151,8 +152,6 @@ a, p {
 }
 
 #bar-list a {
- text-decoration: none;
- font-size: 0.8em;
  margin: 0 10px;
 }
 
@@ -182,7 +181,6 @@ a, p {
   width: 40%;
   position: absolute;
   top: 0;
-  left: 0;
   left: 10%;
   margin-top: 50px;
   height: calc(100% - 50px);
@@ -298,13 +296,38 @@ a, p {
 #hlist > li {
   display: inline-block;
   margin-right: 20px;
-  font-size: 0.8em;
+  font-size: 0.9em;
+  /*aggiunto per checkmark senza i font awesome*/
+  position: relative;
 }
 
-#hlist i {
+/*check mark senza i font awesome*/
+#hlist > li::after {
+  content: "\2714";
+  color: white;
+  position: absolute;
+  left: 0.3em;
+  top: 5%;
+}
+
+#hlist > li::before {
+  content: " ";
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #FA7A59;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+/*/check mark senza i font awesome*/
+
+
+/*container 2 Font Awesome checkmark*/
+/* #hlist i {
   color: #FA7A59;
   margin-right: 10px;
-}
+} */
 
 #container-three {
   width: 80%;
@@ -334,7 +357,6 @@ a, p {
 
 .side > p {
   line-height: 25px;
-  font-size: 0.8em;
 }
 
 .side > hr {
@@ -547,7 +569,6 @@ footer {
 }
 
 .vlist-footer li > a {
-  text-decoration: none;
   color: #C7D3DF;
 }
 
@@ -594,7 +615,6 @@ footer {
 
 #hlist-footer li > a {
   color: white;
-  text-decoration: none;
   margin: 0 10px;
 }
 
@@ -638,7 +658,6 @@ footer {
 
 .foot.bottom-right > a {
   color: white;
-  text-decoration: none;
   padding: 0 10px;
 }
 
