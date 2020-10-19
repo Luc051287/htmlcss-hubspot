@@ -30,16 +30,16 @@ a {
 
 .menu.left > a {
   text-decoration: none;
-  padding: 0 10px;
+  padding-right: 10px;
   border-right: 1px solid black;
 }
 
 .menu.left > a:last-child {
   border-right: none;
+  padding-left: 10px;
 }
 
 .menu.left > a:hover {
-  text-decoration: underline;
   color: #197A8C;
 }
 
@@ -47,8 +47,17 @@ a {
   color: #197A8C;
 }
 
-.menu.left a > i {
-  margin-left: 5px;
+.menu.left a > i:first-child {
+  margin-right: 10px;
+  font-size: 1.3em;
+}
+
+.menu.left a > i:last-child {
+  margin-left: 10px;
+}
+
+.menu.left > a:last-child:hover {
+  text-decoration: underline;
 }
 
 .container {
@@ -79,6 +88,10 @@ a {
 
 .menu.right > i {
   color: #74CEDC;
+}
+
+.menu.right > i:hover {
+  cursor: pointer;
 }
 
 #login, #getfree {
@@ -337,6 +350,7 @@ a {
   list-style-type: none;
   text-align: left;
   margin: 0;
+  font-size: 0.8em;
 }
 
 #vlist i {
@@ -464,6 +478,7 @@ a {
 #section-third-top-left > p {
   font-size: 0.8em;
   line-height: 30px;
+  width: 15vw;
 }
 
 #section-third-top-right {
@@ -505,7 +520,7 @@ a {
 
 #section-third-bottom-left, #section-third-bottom-right {
   position: absolute;
-  margin-top: 50px;
+  padding-top: 50px;
   height: 100%;
 }
 
