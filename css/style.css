@@ -6,6 +6,12 @@
   color: #33485B;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 header {
   width: 100%;
   position: relative;
@@ -24,6 +30,7 @@ a {
   height: 80px;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 2;
   border-bottom: 1px solid #425B76;
 }
@@ -66,12 +73,6 @@ a {
   height: 80px;
 }
 
-.container::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
 .menu {
   height: 80px;
   margin: auto;
@@ -94,7 +95,7 @@ a {
   cursor: pointer;
 }
 
-#login, #getfree {
+#login, .getfree {
   margin-left: 10px;
   font-size: 0.7em;
   border: 1px solid #FA7A59;
@@ -109,11 +110,11 @@ a {
   color: #FA7A59;
 }
 
-#getfree {
+.getfree {
   background-color: #FA7A59;
 }
 
-#login:hover, #getfree:hover {
+#login:hover, .getfree:hover {
   background-color: #FCBCAC;
 }
 
@@ -195,7 +196,7 @@ a {
   width: 97%;
 }
 
-#text-jumbotron > #getfree {
+#text-jumbotron > .getfree {
   font-weight: 300;
   font-size: 12px;
   padding: 15px 25px;
@@ -208,12 +209,6 @@ a {
 
 .sec.first {
   background-color: #F5F8FA;
-}
-
-.sec.first::after {
-  display: table;
-  clear: both;
-  content: "";
 }
 
 #container-uno {
@@ -257,7 +252,7 @@ a {
   margin: 20px;
 }
 
-#sinistra > #getfree, .side > #getfree, #text-section > #getfree {
+#sinistra > .getfree, .side > .getfree, #text-section > .getfree {
   padding: 15px 25px;
 }
 
@@ -308,12 +303,6 @@ a {
 #container-tre {
   width: 80%;
   margin: 30px auto;
-}
-
-#container-tre::after {
-  display: table;
-  clear: both;
-  content: "";
 }
 
 .side {
@@ -387,12 +376,6 @@ a {
   font-weight: 200;
 }
 
-.contenitore.down::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .box {
   width: calc(100% / 4 );
   float: left;
@@ -436,7 +419,8 @@ a {
   font-size: 0.7em;
 }
 
-.plus {
+.plus::after {
+  content: "+";
   color: white;
   font-size: 0.5em;
   font-weight: 200;
@@ -561,12 +545,6 @@ footer {
   margin: auto;
 }
 
-#footer-top::after {
-  clear: both;
-  display: table;
-  content: "";
-}
-
 #vlist-footer {
   float: left;
   width: calc(100% / 4);
@@ -599,7 +577,7 @@ footer {
   font-size: 0.9em;
 }
 
-#vlist-footer #getfree {
+#vlist-footer .getfree {
   margin-left: 0;
   margin-top: 20px;
   background-color: #C7D3DF;
@@ -607,7 +585,7 @@ footer {
   border: 1px solid black;
 }
 
-#vlist-footer #getfree:hover {
+#vlist-footer .getfree:hover {
   background-color: #74CEDC;
 }
 
