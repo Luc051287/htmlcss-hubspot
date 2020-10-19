@@ -114,17 +114,16 @@ a {
   vertical-align: middle;
 }
 
-#bar-list {
+.horiz-list {
   list-style: none;
   height: 80px;
   line-height: 80px;
   text-align: center;
 }
 
-#bar-list > li {
+.horiz-list > li {
  display: inline-block;
  height: 100%;
-
 }
 
 .menu.right i {
@@ -536,19 +535,109 @@ a {
    width: 50%;
  }
 
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
-  height: 500px;
-  background-color: green;
+  height: 600px;
+  background-color: #2D3E50;
+  color: #FDFDFE;
+}
+
+#footer-top {
+  width: 80%;
+  margin: auto;
+}
+
+#footer-top::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+#vlist-footer {
+  float: left;
+  width: calc(100% / 4);
+  color: #FDFDFE;
+  list-style: none;
+  margin-top: 20px;
+}
+
+#vlist-footer li > a {
+  text-decoration: none;
+  color: #C7D3DF;
+}
+
+#vlist-footer > li {
+  margin: 5px 0px;
+  padding: 5px 10px;
+}
+
+#vlist-footer > li:first-child {
+  margin: 30px 0px;
+  padding: 10px 10px;
+}
+
+#vlist-footer a:hover {
+  text-decoration: underline;
+}
+
+#vlist-footer li > b {
+  color: white;
+  font-size: 0.9em;
+}
+
+#vlist-footer #getfree {
+  margin-left: 0;
+  margin-top: 20px;
+  background-color: #C7D3DF;
+  color: #2D3E50;
+  border: 1px solid black;
+}
+
+#vlist-footer #getfree:hover {
+  background-color: #74CEDC;
+}
+
+#vlist-footer i {
+  color: #C7D3DF;
+  font-size: 1.5em;
+  padding: 6px;
+}
+
+#vlist-footer i:hover {
+  color: #74CEDC;
+}
+
+#hlist-footer {
+  width: 80%;
+  margin: auto;
+}
+
+#hlist-footer li > a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+#hlist-footer li > a:hover {
+  color: #74CEDC;
+}
+
+#footer-center > hr {
+  height: 2px;
+  background-color: white;
+  border: none;
+  width: 80%;
+  margin: 5px auto;
+}
+
+#footer-bottom {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#footer-bottom p {
+  color: white;
+  font-size: 0.6em;
+  font-weight: lighter;
+  margin-top: 5px;
 }
