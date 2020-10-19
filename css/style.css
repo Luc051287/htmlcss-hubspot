@@ -17,7 +17,7 @@ header {
   position: relative;
 }
 
-a {
+a, p {
   font-size: 0.8em;
 }
 
@@ -26,9 +26,12 @@ a {
   width: 100%;
 }
 
-.container {
+.centering {
   width: 80%;
   margin: auto;
+}
+
+.container {
   height: 80px;
 }
 
@@ -219,8 +222,6 @@ a {
 }
 
 #container-one {
-  width: 80%;
-  margin: auto;
   text-align: center;
 }
 
@@ -234,7 +235,6 @@ a {
 }
 
 #container-one > p {
-  font-size: 1em;
   margin-top: 30px;
   line-height: 30px;
   margin-bottom: 30px;
@@ -267,14 +267,14 @@ a {
   width: 65%;
 }
 
-#container-two-right * {
-  margin-bottom: 20px;
-}
-
 #container-two-right {
   display: inline-block;
   width: 70%;
   margin-left: 50px;
+}
+
+#container-two-right * {
+  margin-bottom: 20px;
 }
 
 #container-two-right > h4 {
@@ -284,7 +284,6 @@ a {
 #container-two-right > p {
   width: 80%;
   line-height: 25px;
-  font-size: 0.8em;
 }
 
 #container-two-right > hr {
@@ -365,8 +364,6 @@ a {
 }
 
 .section-container {
-  margin: auto;
-  width: 80%;
   text-align: center;
   color: white
 }
@@ -379,7 +376,6 @@ a {
 }
 
 .section-container.up p:last-child {
-  font-size: 0.95em;
   color: white;
   line-height: 30px;
   font-weight: 200;
@@ -399,7 +395,7 @@ a {
 
 .box.up-part {
   border-top: none;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .box.down-part {
@@ -424,10 +420,6 @@ a {
   letter-spacing: 1px;
 }
 
-.box p {
-  font-size: 0.7em;
-}
-
 .plus::after {
   content: "+";
   color: white;
@@ -444,8 +436,6 @@ a {
 }
 
 #section-third-top {
-  margin: auto;
-  width: 80%;
   height: 200px;
   position: relative;
 }
@@ -470,7 +460,6 @@ a {
 }
 
 #section-third-top-left > p {
-  font-size: 0.8em;
   line-height: 30px;
   width: 15vw;
 }
@@ -493,8 +482,6 @@ a {
 }
 
 #section-third-bottom {
-  margin: auto;
-  width: 80%;
   height: 400px;
   position: relative;
 }
@@ -527,7 +514,6 @@ a {
 }
 
 #text-section > p {
-  font-size: 0.8em;
   font-weight: 300;
   line-height: 30px;
 }
@@ -550,11 +536,6 @@ footer {
   height: 600px;
   background-color: #2D3E50;
   color: #FDFDFE;
-}
-
-#footer-top {
-  width: 80%;
-  margin: auto;
 }
 
 .vlist-footer {
@@ -611,11 +592,6 @@ footer {
   color: #74CEDC;
 }
 
-#hlist-footer {
-  width: 80%;
-  margin: auto;
-}
-
 #hlist-footer li > a {
   color: white;
   text-decoration: none;
@@ -635,8 +611,6 @@ footer {
 }
 
 #footer-bottom {
-  width: 80%;
-  margin: auto;
   margin-top: 20px;
   position: relative;
 }
