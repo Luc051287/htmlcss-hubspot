@@ -19,7 +19,6 @@ header {
 
 a, p {
   font-size: 0.8em;
-  /*non sicuro se creare altro*/
   text-decoration: none;
 }
 
@@ -666,3 +665,42 @@ footer {
 }
 
 /*BONUS*/
+
+.container-messagges {
+  width: 280px;
+  height: 250px;
+  position: fixed;
+  right: 0;
+  /*tolgo al viewport l'altezza del contenitore*/
+  top: calc(100vh - 250px);
+  background-color: blue;
+}
+
+#button-chat {
+  background-color: #425B76;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: calc(250px - 75px)
+}
+
+#button-chat > i {
+  color: white;
+}
+
+#chat {
+  height: 120px;
+  width: 240px;
+  background-color: white;
+  position: absolute;
+  top: calc(250px - 215px);
+  right: 15px;
+  border-radius: 5px;
+}
